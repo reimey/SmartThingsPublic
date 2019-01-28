@@ -18,7 +18,7 @@ import physicalgraph.zigbee.clusters.iaszone.ZoneStatus
 import physicalgraph.zigbee.zcl.DataType
 
 metadata {
-	definition(name: "Bosch Zigbee Water/Freeze Sensor", namespace: "reimey", author: "Mark Reimer", ocfDeviceType: "x.com.st.d.sensor.moisture") {
+	definition(name: "Bosch Zigbee Water/Freeze Sensor", namespace: "smartthings", author: "SmartThings", vid: "generic-leak", mnmn:"SmartThings", ocfDeviceType: "x.com.st.d.sensor.moisture") {
 		capability "Battery"
 		capability "Configuration"
 		capability "Health Check"
