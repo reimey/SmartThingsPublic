@@ -1,7 +1,7 @@
 /**
- *  Ecolink Zigbee Water/Freeze Sensor
+ *  Bosch Zigbee Water/Freeze Sensor
  *
- *  Copyright 2018 Samsung SRPOL
+ *  Copyright 2018 Mark Reimer
  *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  *  in compliance with the License. You may obtain a copy of the License at:
@@ -18,7 +18,7 @@ import physicalgraph.zigbee.clusters.iaszone.ZoneStatus
 import physicalgraph.zigbee.zcl.DataType
 
 metadata {
-	definition(name: "Ecolink Zigbee Water/Freeze Sensor", namespace: "smartthings", author: "SmartThings", ocfDeviceType: "x.com.st.d.sensor.moisture") {
+	definition(name: "Bosch Zigbee Water/Freeze Sensor", namespace: "reimey", author: "Mark Reimer", ocfDeviceType: "x.com.st.d.sensor.moisture") {
 		capability "Battery"
 		capability "Configuration"
 		capability "Health Check"
@@ -28,7 +28,7 @@ metadata {
 		capability "Temperature Measurement"
 		capability "Temperature Alarm"
 
-		fingerprint profileId: "0104", deviceId: "0402", inClusters: "0000,0001,0003,0020,0402,0500,0B05,FC01,FC02", outClusters: "0019", manufacturer: "Ecolink", model: "FLZB1-ECO", deviceJoinName: "Ecolink Water/Freeze Sensor"
+		fingerprint profileId: "0104", deviceId: "0402", inClusters: "0000,0001,0003,0020,0402,0500,0B05,FC01,FC02", outClusters: "0019", manufacturer: "Bosch", model: "RFMS-ZBMS", deviceJoinName: "Bosch Water/Freeze Sensor"
 	}
 
 	tiles(scale: 2) {
